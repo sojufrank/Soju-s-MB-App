@@ -6,8 +6,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 WinGet, aoid, List, Anarchy Online
 
 ;GUI
-Gui, Show, w300 h250, Soju's Multi-Box App
+Gui, Show, w310 h260, Soju's Multi-Box App
 Gui, Add, Text,, Welcome to Soju's Multi-Box App, Have Fun MBing!
+Gui, Add, Text,, Press 'end' or buttons at bottom to toggle Hotkeys On and Off
 Gui, Add, Text,, List of Hotkeys:
 Gui, Add, Text,, 0-9, alt 0-9, shift 0-9, f1-f6
 Gui, Add, Text,, up, down, left, right, esc, space
