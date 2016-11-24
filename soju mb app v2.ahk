@@ -6,26 +6,28 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 WinGet, aoid, List, Anarchy Online
 
 ;GUI
-Gui, Show, w300 h400, Soju's Multi-Box App
+Gui, Show, w300 h250, Soju's Multi-Box App
 Gui, Add, Text,, Welcome to Soju's Multi-Box App, Have Fun MBing!
 Gui, Add, Text,, List of Hotkeys:
 Gui, Add, Text,, 0-9, alt 0-9, shift 0-9, f1-f6
 Gui, Add, Text,, up, down, left, right, esc, space
 Gui, Add, Text,, E, R, F, G, H, J, K, L, V, B, N, M
-Gui, Add, Button, gHotkeyON, Hotkey ON
-Gui, Add, Button, X+10 gHotkeyOFF, Hotkey OFF
-Gui, Add, Checkbox, gEToggle vMyEToggle checked, E
-Gui, Add, Checkbox, gRToggle vMyRToggle checked, R
-Gui, Add, Checkbox, gFToggle vMyFToggle checked, F
-Gui, Add, Checkbox, gGToggle vMyGToggle checked, G
-Gui, Add, Checkbox, gHToggle vMyHToggle checked, H
-Gui, Add, Checkbox, gJToggle vMyJToggle checked, J
-Gui, Add, Checkbox, gKToggle vMyKToggle checked, K
-Gui, Add, Checkbox, gLToggle vMyLToggle checked, L
-Gui, Add, Checkbox, gVToggle vMyVToggle checked, V
-Gui, Add, Checkbox, gBToggle vMyBToggle checked, B
-Gui, Add, Checkbox, gNToggle vMyNToggle checked, N
-Gui, Add, Checkbox, gMToggle vMyMToggle checked, M
+Gui, Add, Text,, Uncheck box to disable Hotkey
+Gui, Add, Checkbox, gEToggle vMyEToggle checked x10, E
+Gui, Add, Checkbox, gRToggle vMyRToggle checked x+5, R
+Gui, Add, Checkbox, gFToggle vMyFToggle checked x+5, F
+Gui, Add, Checkbox, gGToggle vMyGToggle checked x+5, G
+Gui, Add, Checkbox, gHToggle vMyHToggle checked x+5, H
+Gui, Add, Checkbox, gJToggle vMyJToggle checked x+5, J
+Gui, Add, Checkbox, gKToggle vMyKToggle checked x10, K
+Gui, Add, Checkbox, gLToggle vMyLToggle checked x+5, L
+Gui, Add, Checkbox, gVToggle vMyVToggle checked x+5, V
+Gui, Add, Checkbox, gBToggle vMyBToggle checked x+5, B
+Gui, Add, Checkbox, gNToggle vMyNToggle checked x+5, N
+Gui, Add, Checkbox, gMToggle vMyMToggle checked x+5, M
+
+Gui, Add, Button, gHotkeyON x10, Hotkey ON
+Gui, Add, Button, gHotkeyOFF X+10, Hotkey OFF
 
 Return
 
