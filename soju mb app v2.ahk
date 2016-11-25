@@ -8,17 +8,16 @@ WinGet, aoid, List, Anarchy Online
 ;GUI
 Gui, Show, w310 h260, Soju's Multi-Box App
 Gui, Add, Text,, Welcome to Soju's Multi-Box App, Have Fun MBing!
-Gui, Add, Text,, Press 'end' or buttons at bottom to toggle Hotkeys On and Off
+Gui, Add, Text,, Press 'End' or buttons at bottom to toggle Hotkeys On and Off
 Gui, Add, Text,, List of Hotkeys:
-Gui, Add, Text,, 0-9, alt 0-9, shift 0-9, f1-f6
+Gui, Add, Text,, numbers 0-9, alt 0-9, shift 0-9, f1-f6
 Gui, Add, Text,, up, down, left, right, esc, space
-Gui, Add, Text,, E, R, F, G, H, J, K, L, V, B, N, M
+Gui, Add, Text,, E, R, F, G, J, K, L, V, B, N, M
 Gui, Add, Text,, Uncheck box to disable Hotkey
 Gui, Add, Checkbox, gEToggle vMyEToggle checked x10, E
 Gui, Add, Checkbox, gRToggle vMyRToggle checked x+5, R
 Gui, Add, Checkbox, gFToggle vMyFToggle checked x+5, F
 Gui, Add, Checkbox, gGToggle vMyGToggle checked x+5, G
-Gui, Add, Checkbox, gHToggle vMyHToggle checked x+5, H
 Gui, Add, Checkbox, gJToggle vMyJToggle checked x+5, J
 Gui, Add, Checkbox, gKToggle vMyKToggle checked x10, K
 Gui, Add, Checkbox, gLToggle vMyLToggle checked x+5, L
@@ -116,7 +115,6 @@ e::
 r::
 f::
 g::
-h::
 j::
 k::
 l::
@@ -195,18 +193,6 @@ Hotkey, g, Off
 if(MyGToggle = 1)
 {
 Hotkey, g, On
-}
-return
-
-HToggle:
-GuiControlGet, MyHToggle
-if(MyHToggle = 0)
-{
-Hotkey, h, Off
-}
-if(MyHToggle = 1)
-{
-Hotkey, h, On
 }
 return
 
